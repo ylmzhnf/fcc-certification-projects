@@ -1,0 +1,60 @@
+/* GENERAL SETTING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-color: antiquewhite;
+  display: grid;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  width: 100%;
+}
+
+#playing-cards {
+  display: flex;
+  gap: 20px;
+  max-width: 600px;
+}
+.card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 0.2rem;
+  width: 400px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.middle {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+  transform: rotate(180deg);
+}
+.reverse {
+  transform: rotate(180deg);
+}
+.red {
+  color: red;
+}
