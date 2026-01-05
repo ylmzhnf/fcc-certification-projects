@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Go Fundamentals - Technical Documentation</title>
+</head>
+<body class="min-h-screen font-sans bg-gray-600  antialiased ">
+    <header class="h-full pt-5 w-40 bg-gray-50 fixed z-[1] top-0 left-0 overflow-x-hidden text-gray-900">
+        <nav class="flex flex-col justify-center ">
+            <ul class="text-center">
+                <li class="list-none"><a href="#introduction" class="px-2 py-2 block w-full hover:bg-blue-500 hover:text-blue-50" >Introduction</a></li>
+                <li class="list-none"><a href="#hello-world" class="px-2 py-2 block w-full hover:bg-blue-500 hover:text-blue-50" >Hello World</a></li>
+                <li class="list-none"><a href="#variables-and-constants" class="px-2 py-2 block w-full hover:bg-blue-500 hover:text-blue-50" >Variables and Constants</a></li>
+                <li class="list-none"><a href="#data-types" class="px-2 py-2 block w-full hover:bg-blue-500 hover:text-blue-50" >Data Types</a></li>
+                <li class="list-none"><a href="#control-structures" class="px-2 py-2 block w-full hover:bg-blue-500 hover:text-blue-50" >Control Structures</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="ml-40  py-0 px-2.5 text-[28px] text-gray-400">
+        <section id="introduction" class="p-12 leading border-b-2 ">
+            <h2 class="font-bold text-gray-900 ">Introduction</h2>
+            <p class="text-base pt-3">
+                Go is an open-source programming language that makes it easy to build simple, reliable, and efficient software.
+            </p>
+            <p class="text-base">It was developed at Google by Robert Griesemer, Rob Pike, and Ken Thompson to improve programming productivity in an era of multicore, networked machines and large codebases.</p>
+            <p class="text-base font-bold py-3 text-gray-900">List Items:</p>
+            <ul class="text-base ">
+                <li>Statically typed and compiled.</li>
+                <li>Memory safety with garbage collection.</li>
+                <li>Native support for concurrency.</li>
+            </ul>
+        </section>
+        <section id="hello-world" class="p-12 leading border-b-2 ">
+            <h2 class="font-bold text-gray-900 ">Hello World</h2>
+            <p class="text-base pt-3">
+                A Go program is essentially a collection of packages. The "main" package is where the execution starts.
+            </p>
+            <p class="text-base mb-5">To print text to the console, we use the "fmt" package which stands for formatted I/O.</p>
+             <code class="text-red-600 p-4 bg-gray-300  text-base rounded-md leading-relaxed block">
+                package main 
+                import "fmt"
+                func main() { 
+                    fmt.Println("Hello, World!")
+                }
+            </code> 
+        </section>
+        <section id="variables-and-constants" class="p-12 leading border-b-2 ">
+            <h2 class="font-bold text-gray-900 ">Variables and Constants</h2>
+            <p class="text-base pt-3">
+                Variables are containers for storing data values. In Go, you can declare a variable using the "var" keyword followed by the name and type.
+            </p>
+            <p class="text-base mb-5">Constants are fixed values that do not change during the execution of the program. They are declared with the "const" keyword.</p>
+             <code class="text-red-600 p-4 bg-gray-300  text-base rounded-md leading-relaxed block">
+                var language string = "Go"
+                const Pi = 3.14
+            </code> 
+        </section>
+        <section id="data-types" class="p-12 leading border-b-2 ">
+            <h2 class="font-bold text-gray-900 ">Data Types</h2>
+            <p class="text-base pt-3">
+                Go has several basic data types including string, bool, and various numeric types like int and float64.
+            </p>
+            <p class="text-base mb-5">Each type has a specific range and purpose depending on the nature of the data being processed.</p>
+             <code class="text-red-600 p-4 bg-gray-300  text-base rounded-md leading-relaxed block">
+                var isActive bool = true
+                var score int = 95
+            </code>
+            <p class="text-base font-bold text-gray-900 mt-5">List Items:</p>
+             <ul class="text-base  ">
+                <li>Integers: int, int32, int64</li>
+                <li>Floating point: float32, float64</li>
+                <li>Strings: Sequence of characters.</li>
+            </ul> 
+        </section>
+        <section id="control-structures" class="p-12 leading">
+            <h2 class="font-bold text-gray-900 ">Control Structures</h2>
+            <p class="text-base pt-3">
+                Control structures allow you to control the flow of execution. Go supports "if", "else", "switch", and "for" loops.
+            </p>
+            <p class="text-base mb-5">Unlike other languages, Go only has one looping construct: the "for" loop, which can be used in several different ways.</p>
+             <code class="text-red-600 p-4 bg-gray-300  text-base rounded-md leading-relaxed block">
+                for i := 0; i < 5; i++ {
+                fmt.Println(i)
+                }
+            </code>
+        </section>
+        
+        </section>
+    </main>
+    
+</body>
+</html>
