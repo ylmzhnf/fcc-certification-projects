@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Account Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-area">
+        <span class="secure-badge"></span>
+        <h1>A BANK</h1>
+      </div>
+      <p class="subtitle">Secure Account Management Panel</p>
+    </header>
+
+    <main id="app-container">
+      <section class="card account-card">
+        <div class="card-info">
+          <span class="card-label">CURRENT BALANCE</span>
+          <div id="balance-display" class="balance-amount"></div>
+          <div class="card-meta">
+            <span>Account: myAccount</span>
+            <span>Status: Active</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="action-column">
+        <section class="card">
+          <div class="card-header">
+            <h2>Deposit Funds</h2>
+          </div>
+          <div class="form-group">
+            <label for="deposit-amount">Amount to Deposit ($)</label>
+            <input
+              type="number"
+              id="deposit-amount"
+              min="0"
+              step="0.01"
+              placeholder="0.00"
+            />
+            <button id="deposit-btn" class="btn btn-primary">Deposit</button>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h2>Withdraw Funds</h2>
+          </div>
+          <div class="form-group">
+            <label for="withdraw-amount">Amount to Withdraw ($)</label>
+            <input
+              type="number"
+              id="withdraw-amount"
+              min="0"
+              step="0.01"
+              placeholder="0.00"
+            />
+            <button id="withdraw-btn" class="btn btn-danger">Withdraw</button>
+          </div>
+        </section>
+      </div>
+      <div class="output-column">
+        <section class="card console-card">
+          <div class="card-header">
+            <h2>Transaction Notification</h2>
+          </div>
+          <div id="system-message" class="console-box">
+          </div>
+        </section>
+
+        <section class="card history-card">
+          <div class="card-header">
+            <h2>Account Statements</h2>
+          </div>
+
+          <div class="statement-group">
+            <span class="statement-title">Deposits History</span>
+            <div id="deposits-list" class="statement-box"></div>
+          </div>
+
+          <div class="statement-group">
+            <span class="statement-title">Withdrawals History</span>
+            <div id="withdrawals-list" class="statement-box">
+              
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
