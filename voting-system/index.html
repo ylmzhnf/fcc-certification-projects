@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-area">
+        <span class="pulse-dot"></span>
+        <h1>POLL MASTER</h1>
+      </div>
+      <p class="subtitle">Secure Live Voting System</p>
+    </header>
+
+    <main id="app-container">
+      <section class="card">
+        <div class="card-header">
+          <h2>1. Add Poll Option</h2>
+        </div>
+        <div class="form-group">
+          <label for="option-input">Option Name</label>
+          <input
+            type="text"
+            id="option-input"
+            placeholder="e.g., Turkey, Morocco, Japan..."
+          />
+          <button id="add-option-btn" class="btn btn-primary">
+            Add Option
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>2. Cast Your Vote</h2>
+        </div>
+        <div class="form-group">
+          <label for="voter-id-input">Your Unique Voter ID</label>
+          <input
+            type="text"
+            id="voter-id-input"
+            placeholder="e.g., voter_01, usr_99..."
+          />
+        </div>
+        <div class="form-group">
+          <label for="vote-option-input">Target Option Name</label>
+          <input
+            type="text"
+            id="vote-option-input"
+            placeholder="Enter option name to vote for..."
+          />
+          <button id="vote-btn" class="btn btn-success">Submit Vote</button>
+        </div>
+      </section>
+
+      <section class="card output-card">
+        <div class="card-header">
+          <h2>3. Live Results & Logs</h2>
+        </div>
+
+        <div class="log-wrapper">
+          <span class="log-title">System Messages</span>
+          <div id="system-message" class="console-box">
+            
+          </div>
+        </div>
+
+        <div class="results-wrapper">
+          <span class="log-title">Poll Statistics</span>
+          <pre id="poll-results" class="results-box"></pre>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
