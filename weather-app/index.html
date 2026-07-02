@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="app-container">
+      <section class="card search-card">
+        <header class="app-header">
+          <span class="live-indicator"></span>
+          <h1>WEATHER</h1>
+        </header>
+
+        <div class="control-group">
+          <div class="select-wrapper">
+            <select id="city-select">
+              <option value="">Select a city...</option>
+              <option value="new york">New York</option>
+              <option value="los angeles">Los Angeles</option>
+              <option value="chicago">Chicago</option>
+              <option value="paris">Paris</option>
+              <option value="tokyo">Tokyo</option>
+              <option value="london">London</option>
+            </select>
+          </div>
+          <button id="get-weather-btn" class="btn btn-primary">
+            Check Weather
+          </button>
+        </div>
+      </section>
+
+      <section id="weather-dashboard" class="card weather-card">
+        <div class="weather-main-info">
+          <div class="location-box">
+            <span class="geo-icon">📍</span>
+            <h2 id="location">N/A</h2>
+          </div>
+
+          <div class="temp-hero">
+            <img
+              id="weather-icon"
+              src="https://cdn.freecodecamp.org/weather-icons/01d.png"
+              alt="Weather Condition Icon"
+            />
+            <div class="temp-wrapper">
+              <span id="main-temperature">N/A</span><span class="unit">°C</span>
+            </div>
+          </div>
+
+          <div class="condition-badge">
+            <span id="weather-main">N/A</span>
+          </div>
+        </div>
+        <div class="weather-details-grid">
+          <div class="detail-item">
+            <div class="detail-icon">🌡️</div>
+            <div class="detail-info">
+              <span class="detail-label">Feels Like</span>
+              <span id="feels-like" class="detail-value">N/A</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon">💧</div>
+            <div class="detail-info">
+              <span class="detail-label">Humidity</span>
+              <span id="humidity" class="detail-value">N/A</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon">💨</div>
+            <div class="detail-info">
+              <span class="detail-label">Wind Speed</span>
+              <span id="wind" class="detail-value">N/A</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon">🌪️</div>
+            <div class="detail-info">
+              <span class="detail-label">Wind Gust</span>
+              <span id="wind-gust" class="detail-value">N/A</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
